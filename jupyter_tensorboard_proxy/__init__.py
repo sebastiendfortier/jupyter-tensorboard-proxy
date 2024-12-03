@@ -19,7 +19,8 @@ def setup_tensorboard():
         return [
             tensorboard_path,
             '--port', str(port),
-            '--bind_all'  # Allow external connections
+            '--bind_all',  # Allow external connections
+            '--logdir', '~/tensorboard_logs/'
         ]
 
     return {
